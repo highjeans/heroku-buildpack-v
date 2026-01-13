@@ -2,7 +2,7 @@
 # bin/detect <build-dir>
 set -e
 
-if test -n "$(find "$1" -type f -name 'app.v' | sed 1q)"
+if test -n "$(find "$1" -type f -name 'v.mod' | sed 1q)"
 then echo V
 else echo no; exit 1
 fi
