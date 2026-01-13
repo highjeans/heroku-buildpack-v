@@ -67,6 +67,6 @@ else
     echo "remote.txt not found - do not install any thirdparty module from a remote repo." | arrow
 fi
 
-$V_DIR/v -prod -o app .
+$V_DIR/v -prod -cflags "-static" -o app .
 
 echo "using ${v_repo} @${v_branch}" | indent
