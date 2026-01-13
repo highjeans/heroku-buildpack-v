@@ -67,6 +67,6 @@ else
     echo "remote.txt not found - do not install any thirdparty module from a remote repo." | arrow
 fi
 
-$V_DIR/v app.v
+$V_DIR/v .
 
 echo "using ${v_repo} @${v_branch}" | indent
